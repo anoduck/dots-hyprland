@@ -1,0 +1,2 @@
+(include "$HOME/.config/hypr/eww/bar/eww.yuck")
+(include "$HOME/.config/hypr/eww/controls/eww.yuck")

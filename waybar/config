@@ -1,0 +1,48 @@
+{
+	"include": [
+		"$HOME/.config/hypr/waybar/Modules",
+		"$HOME/.config/hypr/waybar/ModulesWorkspaces",
+		"$HOME/.config/hypr/waybar/ModulesCustom",
+		"$HOME/.config/hypr/waybar/ModulesGroups"
+	],
+	"layer": "top",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "bottom",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 2,
+	"margin-left": 2,
+	"margin-right": 2,
+	"modules-left": [
+		"custom/menu",
+		"idle_inhibitor",
+		"custom/icon4",
+		"hyprland/workspaces#rw"
+	],
+	"modules-center": [
+		"wlr/taskbar",
+		// "custom/separator#blank",
+		"group/cpu"
+	],
+	"modules-right": [
+		"power-profiles-daemon",
+		"group/tray",
+		// "custom/net",
+		// "network",
+		"clock#2",
+		"custom/lock",
+		"custom/power"
+	],
+	"custom/net": {
+		"interval": 1,
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{bandwidthDownBytes}/{bandwidthUpBytes} ",
+		"tooltip-format": "{ifname} via {gwaddr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ⚠",
+		"min-length": 18,
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	}
+}
