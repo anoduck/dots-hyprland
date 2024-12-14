@@ -16,14 +16,14 @@
 	"margin-left": 2,
 	"margin-right": 2,
 	"modules-left": [
+		"custom/separator#blank",
 		"custom/menu",
-		"idle_inhibitor",
 		"custom/icon4",
 		"hyprland/workspaces#rw"
 	],
 	"modules-center": [
 		"wlr/taskbar",
-		// "custom/separator#blank",
+		"custom/separator#blank",
 		"group/cpu"
 	],
 	"modules-right": [
