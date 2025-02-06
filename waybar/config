@@ -29,8 +29,6 @@
 	"modules-right": [
 		"power-profiles-daemon",
 		"group/tray",
-		// "custom/net",
-		// "network",
 		"clock#2",
 		"custom/lock",
 		"custom/power"
