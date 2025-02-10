@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Scripts for refreshing ags waybar, rofi, swaync, wallust
 
@@ -6,7 +6,7 @@ SCRIPTSDIR=$HOME/.config/hypr/scripts
 UserScripts=$HOME/.config/hypr/UserScripts
 
 # Kill already running processes
-_ps=(waybar rofi swaync ags)
+_ps=(waybar rofi)
 for _prs in "${_ps[@]}"; do
     if pidof "${_prs}" >/dev/null; then
         pkill "${_prs}"
