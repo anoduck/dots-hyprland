@@ -203,7 +203,7 @@
 	"hyprland/language": {
 		"format": "Lang: {}",
 		"format-en": "US",
-		"format-tr": "Korea",
+		"format-tr": "RU",
 		"keyboard-name": "at-translated-set-2-keyboard",
 		"on-click": "hyprctl switchxkblayout $SET_KB next"
 	},
@@ -239,12 +239,12 @@
 		"capslock": true,
 		"format": {
 			"numlock": "N {icon}",
-			"capslock": "󰪛 {icon}",
+			"capslock": "󰪛 {icon}"
 		},
 		"format-icons": {
 			"locked": "",
 			"unlocked": ""
-		},
+		}
 	},
 	"memory": {
 		"interval": 10,
@@ -367,7 +367,7 @@
 			],
 			"ignored-sinks": [
 				"Easy Effects Sink"
-			],
+			]
 		},
 		"scroll-step": 5.0,
 		"on-click": "$HOME/.config/hypr/scripts/Volume.sh --toggle",
@@ -375,7 +375,7 @@
 		"on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
 		"on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
 		"tooltip-format": "{icon} {desc} | {volume}%",
-		"smooth-scrolling-threshold": 1,
+		"smooth-scrolling-threshold": 1
 	},
 	"pulseaudio#1": {
 		"format": "{icon} {volume}%",
@@ -439,7 +439,18 @@
 		"ignore-list": [
 			"wofi",
 			"rofi",
-			"kitty-dropterm"
+			"kitty-dropterm",
+			"tabby",
+			"alfred",
+			"spmenu",
+			"Neovide",
+			"frost",
+			"front-next",
+			"Frost-Next",
+			"copyq",
+			"win0",
+			"win1",
+			"win2"
 		]
 	},
 	// Modules below are for vertical layout
@@ -551,5 +562,27 @@
 		"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
 		"interval": 86400,
 		"tooltip": true
+	},
+	"privacy": {
+		"icon-spacing": 4,
+		"icon-size": 18,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "screenshare",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-in",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
 	}
 }

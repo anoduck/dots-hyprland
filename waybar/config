@@ -16,17 +16,21 @@
 	"margin-left": 2,
 	"margin-right": 2,
 	"modules-left": [
+		"privacy",
 		"custom/separator#blank",
 		"custom/menu",
 		"custom/icon4",
-		"hyprland/workspaces#rw"
+		"hyprland/workspaces#rw",
+		"hyprland/submap"
 	],
 	"modules-center": [
 		"wlr/taskbar",
 		"custom/separator#blank",
-		"group/cpu"
+		"hyprland/window"
 	],
 	"modules-right": [
+		"group/cpu",
+		"custom/separator#blank",
 		"power-profiles-daemon",
 		"group/tray",
 		"clock#2",
