@@ -32,7 +32,6 @@
 		"transition-left-to-right": true
         },
 	"modules": [
-		"custom/swaync",
 		"cpuIcon",
 		"cpu",
 		"memory",

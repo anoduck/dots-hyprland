@@ -6,7 +6,7 @@ SCRIPTSDIR=$HOME/.config/hypr/scripts
 UserScripts=$HOME/.config/hypr/UserScripts
 
 # Kill already running processes
-_ps=(waybar rofi)
+_ps=(waybar rofi albert qclip)
 for _prs in "${_ps[@]}"; do
     if pidof "${_prs}" >/dev/null; then
         pkill "${_prs}"
