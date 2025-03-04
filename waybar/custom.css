@@ -1,0 +1,11 @@
+/* Custom waybar modifications */
+window#waybar {
+	border-radius: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-style: solid;
+	border-width: 0.10rem;
+	border-color: #61ffca;
+}

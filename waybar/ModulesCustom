@@ -49,15 +49,15 @@
 	"format": " ",
 	"on-click": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
 	"on-click-right": "$HOME/.config/hypr/UserScripts/WallpaperRandom.sh",
-	"on-click-middle": "$HOME/.config/hypr/scripts/WaybarStyles.sh",
+	"on-click-middle": "$HOME/.config/hypr/default/scripts/WaybarStyles.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Wallpaper Menu\nMiddle Click: Random wallpaper\nRight Click: Waybar Styles Menu",
 },
 
 "custom/hint": {
 	"format": "󰺁 HINT!",
-	"on-click": "$HOME/.config/hypr/scripts/KeyHints.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/KeyBinds.sh",
+	"on-click": "$HOME/.config/hypr/default/scripts/KeyHints.sh",
+	"on-click-right": "$HOME/.config/hypr/default/scripts/KeyBinds.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Quick Tips\nRight Click: Keybinds",
 },
@@ -69,8 +69,8 @@
 	"escape": true,
 	"exec-on-event": true,
 	"interval": 60,
-	"exec": "$HOME/.config/hypr/scripts/Hypridle.sh status",
-	"on-click": "$HOME/.config/hypr/scripts/Hypridle.sh toggle",
+	"exec": "$HOME/.config/hypr/default/scripts/Hypridle.sh status",
+	"on-click": "$HOME/.config/hypr/default/scripts/Hypridle.sh toggle",
 	"on-click-right": "hyprlock"
 },
 
@@ -78,13 +78,13 @@
 	"exec": "cat $HOME/.cache/kb_layout",
 	"interval": 1,
 	"format": " {}",
-	"on-click": "$HOME/.config/hypr/scripts/SwitchKeyboardLayout.sh",
+	"on-click": "$HOME/.config/hypr/default/scripts/SwitchKeyboardLayout.sh",
 },
 
 "custom/light_dark": {
 	"format": "󰔎 ",
-	"on-click": "$HOME/.config/hypr/scripts/DarkLight.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/WaybarStyles.sh",
+	"on-click": "$HOME/.config/hypr/default/scripts/DarkLight.sh",
+	"on-click-right": "$HOME/.config/hypr/default/scripts/WaybarStyles.sh",
 	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
@@ -92,7 +92,7 @@
 
 "custom/lock": {
 	"format": "󰌾",
-	"on-click": "$HOME/.config/hypr/scripts/LockScreen.sh",
+	"on-click": "$HOME/.config/hypr/default/scripts/LockScreen.sh",
 	"tooltip": true,
 	"tooltip-format": "󰷛 Screen Lock",
 },
@@ -101,13 +101,13 @@
 	"format": "",
 	"on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser,window",
 	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/WaybarLayout.sh",
+	"on-click-right": "$HOME/.config/hypr/default/scripts/WaybarLayout.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Rofi Menu\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Layout Menu",
 },
 // This is a custom cava visualizer
 "custom/cava_mviz": {
-	"exec": "$HOME/.config/hypr/scripts/WaybarCava.sh",
+	"exec": "$HOME/.config/hypr/default/scripts/WaybarCava.sh",
 	"format": "{}"
 },
 
@@ -120,15 +120,15 @@
 	"on-click": "playerctl previous",
 	"on-click-right": "playerctl next",
 	"scroll-step": 5.0,
-	"on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
-	"on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
+	"on-scroll-up": "$HOME/.config/hypr/default/scripts/Volume.sh --inc",
+	"on-scroll-down": "$HOME/.config/hypr/default/scripts/Volume.sh --dec",
 	"smooth-scrolling-threshold": 1,
 },
 
 "custom/power": {
 	"format": "⏻ ",
-	"on-click": "$HOME/.config/hypr/scripts/Wlogout.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
+	"on-click": "$HOME/.config/hypr/default/scripts/Wlogout.sh",
+	"on-click-right": "$HOME/.config/hypr/default/scripts/ChangeBlur.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
 },
