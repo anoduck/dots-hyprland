@@ -6,7 +6,7 @@
 # Modified inorder to refresh rofi background, Wallust, SwayNC only
 
 SCRIPTSDIR=$HOME/.config/hypr/default/scripts
-UserScripts=$HOME/.config/hypr/UserScripts
+UserScripts=$HOME/.config/hypr/local/scripts
 
 # Define file_exists function
 file_exists() {

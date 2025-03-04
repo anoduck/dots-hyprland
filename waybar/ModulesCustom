@@ -11,8 +11,8 @@
 	"format-alt-click": "click",
 	"interval": 3600,
 	"return-type": "json",
-	"exec": "$HOME/.config/hypr/UserScripts/Weather.sh",
-	//"exec": "$HOME/.config/hypr/UserScripts/Weather.py",
+	"exec": "$HOME/.config/hypr/local/scripts/Weather.sh",
+	//"exec": "$HOME/.config/hypr/local/scripts/Weather.py",
 	"exec-if": "ping wttr.in -c1",
 	"tooltip": true,
 },
@@ -40,15 +40,15 @@
 
 "custom/settings": {
 	"format": " ",
-	"on-click": "$HOME/.config/hypr/UserScripts/QuickEdit.sh",
+	"on-click": "$HOME/.config/hypr/local/scripts/QuickEdit.sh",
 	"tooltip": true,
 	"tooltip-format": "Launch Quick Edit",
 },
 
 "custom/cycle_wall": {
 	"format": " ",
-	"on-click": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
-	"on-click-right": "$HOME/.config/hypr/UserScripts/WallpaperRandom.sh",
+	"on-click": "$HOME/.config/hypr/local/scripts/WallpaperSelect.sh",
+	"on-click-right": "$HOME/.config/hypr/local/scripts/WallpaperRandom.sh",
 	"on-click-middle": "$HOME/.config/hypr/default/scripts/WaybarStyles.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Wallpaper Menu\nMiddle Click: Random wallpaper\nRight Click: Waybar Styles Menu",
@@ -85,7 +85,7 @@
 	"format": "󰔎 ",
 	"on-click": "$HOME/.config/hypr/default/scripts/DarkLight.sh",
 	"on-click-right": "$HOME/.config/hypr/default/scripts/WaybarStyles.sh",
-	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
+	"on-click-middle": "$HOME/.config/hypr/local/scripts/WallpaperSelect.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
 },
@@ -100,7 +100,7 @@
 "custom/menu": {
 	"format": "",
 	"on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser,window",
-	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
+	"on-click-middle": "$HOME/.config/hypr/local/scripts/WallpaperSelect.sh",
 	"on-click-right": "$HOME/.config/hypr/default/scripts/WaybarLayout.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Rofi Menu\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Layout Menu",

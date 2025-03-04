@@ -3,7 +3,7 @@
 # Scripts for refreshing ags waybar, rofi, swaync, wallust
 
 SCRIPTSDIR=$HOME/.config/hypr/default/scripts
-UserScripts=$HOME/.config/hypr/UserScripts
+UserScripts=$HOME/.config/hypr/local/scripts
 
 # Kill already running processes
 _ps=(waybar rofi albert qclip)
