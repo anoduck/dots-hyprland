@@ -1,0 +1,5 @@
+# TODO Hyprland Configuration.
+# ------------------------------
+
+1. [ ] - Move Scripts to default and/or local
+2. [ ] - Re-reference scripts directories to new location.
