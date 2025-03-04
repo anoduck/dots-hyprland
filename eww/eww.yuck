@@ -86,7 +86,7 @@
       :varname "revealVolume"
       :transition "slideleft"
       :class "volume"
-      
+
       (hovered-sign :var revealVolume
         (label :text "")
         (label :text "")
@@ -126,7 +126,7 @@
       :varname "revealSpotify"
       :transition "slideleft"
       :class "spotify"
-      
+
       (hovered-sign :var revealSpotify
         (label :class "spotify" :text "")
         (label :class "spotify" :text "")
@@ -143,15 +143,15 @@
       :class "docker"
       :space-evenly false
       :spacing 10
-      
+
       (termbutton :command "eww update revealDocker=false && lazydocker" :class "ok" :width "1400" :text " Lazydocker" :floating true)
       ;(button :onclick "eww update revealDocker=false && docker system prune -f" :class "good" (label :text " Reclaim space")
-        
+
         (button :onclick "eww update revealDocker=false && (docker ps -qa | xargs docker stop || true) " :class "warning" (label :text " Stop all containers")        )
       )
     )
   )
-  
+
   (defwidget github []
     (clickbox :var revealGithub :varname "revealGithub" :transition "slideleft"
       (label :class "github" :text "    "  )
@@ -163,7 +163,7 @@
       )
     )
   )
-  
+
   (defwidget network []
     (box :orientation "h" :space-evenly false (label :text "${interfaceId}: ${round(EWW_NET[interfaceId].NET_UP / 1000000, 2)}")
       (label :class {round(EWW_NET[interfaceId].NET_UP / 1000000, 2) > 0.1 ?
@@ -178,7 +178,7 @@
     )
   )
   ;
-  
+
   (defwindow bar
     :monitor 0
     :windowtype "dock"
@@ -190,7 +190,7 @@
     :reserve (struts :side "top" :distance "4%")
     (bar)
   )
-  
+
   (defwindow bottombar
     :monitor 0
     :windowtype "dock"
@@ -202,5 +202,3 @@
     :reserve (struts :side "bottom" :distance "4%")
     (bottombar)
   )
-  
-  

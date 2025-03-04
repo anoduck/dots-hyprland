@@ -1,10 +1,9 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Layout Config (Waybar) */
 
-@import "~/.config/hypr/rofi/config-waybar-style.rasi" 
+@import "~/.config/hypr/rofi/config-waybar-style.rasi"
 
-/* ---- Entry ---- */ 
+/* ---- Entry ---- */
 entry {
   placeholder: "🖼️ Choose Waybar Layout";
 }
-
