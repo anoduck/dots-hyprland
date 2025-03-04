@@ -1,4 +1,4 @@
- /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  
+ /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
  /* wallust template - colors-rofi */
 
 * {
@@ -28,4 +28,3 @@ background: rgba(0,0,0,0.7);
 foreground: #EFE4C5;
 border-color: #575F78;
 }
-

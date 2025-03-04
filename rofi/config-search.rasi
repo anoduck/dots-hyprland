@@ -1,7 +1,7 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Rofi Config for Google Search) */
 
-@import "~/.config/hypr/rofi/master-config.rasi"  
+@import "~/.config/hypr/rofi/master-config.rasi"
 
 /* ---- Window ---- */
 window {
@@ -21,8 +21,7 @@ mainbox {
     children: [ "entry"];
 }
 
-/* ---- Entry ---- */ 
+/* ---- Entry ---- */
 entry {
 	placeholder: "🔎 Google Search";
 }
-

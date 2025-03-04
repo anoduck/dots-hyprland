@@ -19,9 +19,8 @@ Music details are coming from `playerctl` which is picking up my playing try fro
 
 ### Bottom Bar
 
-Keeping it simple on the bottom bar - 
+Keeping it simple on the bottom bar -
 
 Workspaces repeated again on the left. On the right we have memory usage, CPU avg usage and disk usage. Then we have my primary interface throughput captured.
 
 ![Bottom bar](.github/bottombar.gif)
-

@@ -1,9 +1,9 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Wallpaper Effects */
 
-@import "~/.config/hypr/rofi/master-config.rasi" 
+@import "~/.config/hypr/rofi/master-config.rasi"
 
-/* ---- Entry ---- */ 
+/* ---- Entry ---- */
 entry {
   width: 20%;
   placeholder: "🏙️ Choose desired wallpaper effect";

@@ -1,7 +1,7 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Main Config - emoji */
 
-@import "~/.config/hypr/rofi/master-config.rasi" 
+@import "~/.config/hypr/rofi/master-config.rasi"
 
 /* ---- Entry ---- */
 entry {
