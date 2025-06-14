@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
 KALB=$(killall -SIGUSR2 albert)
-ALBIN="/usr/bin/albert &>/dev/null"
+# ALBIN="/usr/bin/albert &>/dev/null"
 PIDALBERT=$(pidof albert >/dev/null)
+RUNALB=$(hyprctl keyword exec albert)
 
-# start waybar if not started
-if ! pgrep -x "albert" > /dev/null; then
-	hyprctl keyword exec albert
-fi
+checkkill() {
+	if "$PIDALBERT"; then
+		"$KALB"
+		sleep 1
+	fi
+}
 
-
-if [[ $PIDALBERT ]]; then
-	$KALB
-fi
-
-$ALBIN
+checkkill
+$RUNALB

@@ -6,7 +6,7 @@ SCRIPTSDIR=$HOME/.config/hypr/default/scripts
 UserScripts=$HOME/.config/hypr/local/scripts
 
 # Kill already running processes
-_ps=(waybar rofi albert qclip)
+_ps=(waybar rofi qclip)
 for _prs in "${_ps[@]}"; do
     if pidof "${_prs}" >/dev/null; then
         pkill "${_prs}"
@@ -15,8 +15,8 @@ done
 
 sleep 0.3
 #Restart waybar
-/usr/bin/waybar -b "bar" --config "$HOME/.config/hypr/waybar/config"
-
+WAYCONFIG="$HOME/.config/hypr/waybar/config"
+hyprctl keyword exec waybar -b "bar" --config "$WAYCONFIG"
 # relaunch swaync
 
 exit 0
