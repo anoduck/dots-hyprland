@@ -5,18 +5,17 @@ plugins = [
  "lost_windows",
  "magnify",
  "scratchpads",
- "shift_monitors",
  "toggle_special",
  "workspaces_follow_focus",
 ]
 
 # using variables for demonstration purposes (not needed)
-[pyprland.variables]
-term_classed = "kitty --class"
+# [pyprland.variables]
+# term_classed = "ghostty"
 
-[scratchpads.term]
-animation = "fromTop"
-command = "[term_classed] main-dropterm"
-class = "main-dropterm"
-size = "75% 60%"
-max_size = "1920px 100%"
+# [scratchpads.term]
+# animation = "fromTop"
+# command = "[term_classed] main-dropterm"
+# class = "main-dropterm"
+# size = "75% 60%"
+# max_size = "1920px 100%"
