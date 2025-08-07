@@ -1,3 +1,20 @@
+
+<div style="text-align: center;">
+<pre>
+ █████   █████                                ████                           █████    ██████████             █████       ██████   ███  ████
+░░███   ░░███                                ░░███                          ░░███    ░░███░░░░███           ░░███       ███░░███ ░░░  ░░███
+ ░███    ░███  █████ ████ ████████  ████████  ░███   ██████   ████████    ███████     ░███   ░░███  ██████  ███████    ░███ ░░░  ████  ░███   ██████   █████
+ ░███████████ ░░███ ░███ ░░███░░███░░███░░███ ░███  ░░░░░███ ░░███░░███  ███░░███     ░███    ░███ ███░░███░░░███░    ███████   ░░███  ░███  ███░░███ ███░░
+ ░███░░░░░███  ░███ ░███  ░███ ░███ ░███ ░░░  ░███   ███████  ░███ ░███ ░███ ░███     ░███    ░███░███ ░███  ░███    ░░░███░     ░███  ░███ ░███████ ░░█████
+ ░███    ░███  ░███ ░███  ░███ ░███ ░███      ░███  ███░░███  ░███ ░███ ░███ ░███     ░███    ███ ░███ ░███  ░███ ███  ░███      ░███  ░███ ░███░░░   ░░░░███
+ █████   █████ ░░███████  ░███████  █████     █████░░████████ ████ █████░░████████    ██████████  ░░██████   ░░█████   █████     █████ █████░░██████  ██████
+░░░░░   ░░░░░   ░░░░░███  ░███░░░  ░░░░░     ░░░░░  ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░░░    ░░░░░░░░░░    ░░░░░░     ░░░░░   ░░░░░     ░░░░░ ░░░░░  ░░░░░░  ░░░░░░
+                ███ ░███  ░███
+               ░░██████   █████
+                ░░░░░░   ░░░░░
+</pre>
+</div>
+
 # Hyprland Dotfiles
 
 A reasonable Hyprland configuration for reasonable people with reasonable expectations, who believe that form should always follow function. Not, the other way around.
@@ -11,6 +28,12 @@ discovering "surprises" in my system. Although, the rice was beautiful and the d
 obviously went to much trouble to make it, he did not put forth any effort to explain what
 was going to be installed and how to uninstall it.
 
+## Examples
+
+| Screenshots                         | Screenshots                      |
+|-------------------------------------|----------------------------------|
+| ![Tabby Terminal](assets/tabby.png) | ![Ulauncher](assets/ulaunch.png) |
+| ![LogSeq](assets/logseq.png)        |                              |
 
 ## Getting Started
 
