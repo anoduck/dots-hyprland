@@ -79,7 +79,7 @@ exit
 🤮	face-unwell	vomiting	face vomiting | puke | sick | vomit
 🤧	face-unwell	face	face | gesundheit | sneeze | sneezing face | bless you
 🥵	face-unwell	face	feverish | heat stroke | hot | hot face | red-faced | sweating | flushed
-🥶	face-unwell	face	blue-faced | cold | cold face | freezing | ***REMOVED***bite | icicles
+🥶	face-unwell	face	blue-faced | cold | cold face | freezing | frostbite | icicles
 🥴	face-unwell	face	dizzy | intoxicated | tipsy | uneven eyes | wavy mouth | woozy face
 😵	face-unwell	with crossed-out eyes	crossed-out eyes | dead | face | face with crossed-out eyes | knocked out
 😵‍💫	face-unwell	with spiral eyes	dizzy | face with spiral eyes | hypnotized | spiral | trouble | whoa | hypnotised
