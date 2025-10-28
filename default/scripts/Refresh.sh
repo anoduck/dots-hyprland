@@ -3,20 +3,33 @@
 # Scripts for refreshing ags waybar, rofi, swaync, wallust
 
 SCRIPTSDIR=$HOME/.config/hypr/default/scripts
-UserScripts=$HOME/.config/hypr/local/scripts
+# UserScripts=$HOME/.config/hypr/local/scripts
+WAYBAR=$("${SCRIPTSDIR}/waybar.sh")
+
+kill_waybar () {
+	WB_PS=$(pgrep -u $UID -f "bash $SCRIPTSDIR/waybar.sh")
+	for ps in "${WB_PS[@]}"; do
+		pkill "$ps"
+	done
+}
 
 # Kill already running processes
-_ps=(waybar rofi qclip)
-for _prs in "${_ps[@]}"; do
-    if pidof "${_prs}" >/dev/null; then
-        pkill "${_prs}"
-    fi
-done
+kill_ps () {
+	_ps=(rofi)
+	for _prs in "${_ps[@]}"; do
+    	if pidof "${_prs}" >/dev/null; then
+      	pkill "${_prs}"
+    	fi
+	done
+}
+
+kill_waybar
+kill_ps
 
 sleep 0.3
 #Restart waybar
-WAYCONFIG="$HOME/.config/hypr/waybar/config"
-hyprctl keyword exec waybar -b "bar" --config "$WAYCONFIG"
+
+$WAYBAR
 # relaunch swaync
 
 exit 0
