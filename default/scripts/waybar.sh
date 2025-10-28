@@ -3,10 +3,11 @@
 CONFIG="$HOME/.config/hypr/waybar"
 WAYCONFIG="$CONFIG/config"
 WAYSTYLE="$CONFIG/style.css"
+EXECWAYBAR=$(hyprctl keyword exec "waybar -b bar --config ${WAYCONFIG}")
 
 # start waybar if not started
 if ! pgrep -x "waybar" > /dev/null; then
-	hyprctl keyword exec waybar -b "bar" --config "$WAYCONFIG"
+	$EXECWAYBAR
 fi
 
 # current checksums
@@ -25,7 +26,7 @@ while true; do
 		killall waybar
 
 		# start waybar
-		waybar &
+		$EXECWAYBAR
 
 		# update checksums
 		current_checksum_config=$new_checksum_config
